@@ -19,7 +19,7 @@ const mobileMenu = ref(false)
                 </div>
 
             </div>
-            <button class="bg-gray-200 p-2 rounded-full lg:hidden">
+            <button class="p-2 rounded-full lg:hidden">
                 <FeatherIcon icon="user" width="30" height="30" class="lg:hidden text-gray-500"/>
             </button>
             <div class="lg:flex flex-row gap-2 hidden">
