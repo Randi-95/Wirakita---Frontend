@@ -35,17 +35,48 @@ const mobileMenu = ref(false)
         <!-- menu navbar mobile -->
         <transition name="slide">
         <div v-if="mobileMenu" class="absolute top-0 left-0 w-3/4 h-screen bg-white shadow-lg lg:hidden mt-2 p-4 flex flex-col gap-2">
-            <button class=" p-2" @click="mobileMenu = false">
-                <FeatherIcon icon="x" width="30" height="30" class="text-gray-500"/>
-            </button>
+            <div class="flex items-center ">
+                <button class=" p-2" @click="mobileMenu = false">
+                    <FeatherIcon icon="x" width="30" height="30" class="text-gray-500"/>
+                </button>
+                <h2 class="font-bold text-2xl block lg:hidden">Wira<span class="text-[#06CAF5]">Kita</span></h2>
+            </div>
+             <div class="flex items-center border-y mt-4 border-gray-300 gap-4 py-6">
+                <FeatherIcon icon="map-pin" width="16" height="16"/>
+                <div class="">
+                    <p class="text-xs">Lokasi Sekolah</p>
+                    <p class="font-semibold text-xs">SMKN 1 Surabaya, Indonesia</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 justify-between w-full pt-4">
+                <div class="flex gap-2">
+                    <FeatherIcon icon="shopping-bag" width="14" height="14"/>
+                    <p class="text-xs">Mulai Jualan</p>
+                </div>
 
-            <h2 class="font-bold text-2xl hidden lg:block">Wira<span class="text-[#06CAF5]">Kita</span></h2>
-            <button class="border border-gray-300 px-6 py-2 rounded-lg flex items-center gap-2">
-                <FeatherIcon icon="user" width="16" height="16"/> Masuk
-            </button>
-            <button class="px-6 py-2 border border-[#06CAF5] rounded-lg bg-[#06CAF5] flex items-center gap-2 text-white">
-                <FeatherIcon icon="shopping-bag" width="16" height="16"/> Mulai Jualan
-            </button>
+                <FeatherIcon icon="arrow-right" width="16" height="16"/>
+            </div>
+            <div class="flex items-center gap-4 justify-between w-full mt-2 border-b border-gray-300 pb-10">
+                <div class="flex gap-2">
+                    <FeatherIcon icon="book-open" width="14" height="14"/>
+                    <p class="text-xs">Artikel</p>
+                </div>
+
+                <FeatherIcon icon="arrow-right" width="16" height="16"/>
+            </div>
+
+            <div class="flex items-center gap-4 justify-between w-full mt-2">
+                <div class="flex gap-2">
+                    <FeatherIcon icon="user" width="14" height="14"/>
+                    <p class="text-xs">Daftar Akun</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 justify-between w-full mt-2">
+                <div class="flex gap-2">
+                    <FeatherIcon icon="log-in" width="14" height="14"/>
+                    <p class="text-xs">Masuk Akun</p>
+                </div>
+            </div>
         </div>
         </transition>
     </div>
