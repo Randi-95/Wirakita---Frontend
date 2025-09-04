@@ -9,7 +9,13 @@ const mobileMenu = ref(false)
     <div class="relative">
         <div class="flex justify-between gap-2 px-2 lg:px-10 py-4 h-20 items-center">
             <div class="judul-search flex w-full lg:w-[65%] gap-2 items-center">
-                <h2 class="font-bold text-2xl hidden lg:block">Wira<span class="text-[#06CAF5]">Kita</span></h2>
+                <h2 class="font-bold text-2xl hidden lg:block mr-4">Wira<span class="text-[#06CAF5]">Kita</span></h2>
+                <div class="lg:flex items-center hidden  gap-2 w-60 border-[1.3px] border-gray-300 px-2 py-4 rounded-lg">
+                    <FeatherIcon icon="map-pin" width="16" height="16" class="text-gray-600"/>
+                    <div class="">
+                        <p class="font-md text-xs text-gray-600">SMKN 1 Surabaya</p>
+                    </div>
+                </div>
                 <FeatherIcon icon="menu" width="30" height="30" class="lg:hidden text-gray-500" @click="mobileMenu = !mobileMenu"/>
                 <div class="w-full relative">
                 <input type="text" placeholder="Cari di WiraKita" class="border border-[#06CAF5] w-full p-2 rounded-lg h-12"/>
