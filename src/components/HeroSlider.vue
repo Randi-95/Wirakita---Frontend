@@ -6,7 +6,7 @@
         :pagination="{ clickable: true }"
         :navigation="true" :centered-slides="true"
         :slides-per-view="'auto'"
-        :space-between="20"
+        :space-between="10"
         class="pb-10"
       >
         <swiper-slide
