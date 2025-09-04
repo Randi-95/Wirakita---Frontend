@@ -50,31 +50,31 @@ const mobileMenu = ref(false)
             </div>
             <div class="flex items-center gap-4 justify-between w-full pt-4">
                 <div class="flex gap-2">
-                    <FeatherIcon icon="shopping-bag" width="14" height="14"/>
-                    <p class="text-xs">Mulai Jualan</p>
+                    <FeatherIcon icon="shopping-bag" width="14" height="14" class="text-gray-600"/>
+                    <p class="text-xs text-gray-600">Mulai Jualan</p>
                 </div>
 
-                <FeatherIcon icon="arrow-right" width="16" height="16"/>
+                <FeatherIcon icon="arrow-right" width="16" height="16" class="text-gray-600"/>
             </div>
             <div class="flex items-center gap-4 justify-between w-full mt-2 border-b border-gray-300 pb-10">
                 <div class="flex gap-2">
-                    <FeatherIcon icon="book-open" width="14" height="14"/>
-                    <p class="text-xs">Artikel</p>
+                    <FeatherIcon icon="book-open" width="14" height="14" class="text-gray-600"/>
+                    <p class="text-xs text-gray-600">Artikel</p>
                 </div>
 
-                <FeatherIcon icon="arrow-right" width="16" height="16"/>
+                <FeatherIcon icon="arrow-right" width="16" height="16" class="text-gray-600"/>
             </div>
 
             <div class="flex items-center gap-4 justify-between w-full mt-2">
                 <div class="flex gap-2">
-                    <FeatherIcon icon="user" width="14" height="14"/>
-                    <p class="text-xs">Daftar Akun</p>
+                    <FeatherIcon icon="user" width="14" height="14" class="text-gray-600"/>
+                    <p class="text-xs text-gray-600">Daftar Akun</p>
                 </div>
             </div>
             <div class="flex items-center gap-4 justify-between w-full mt-2">
                 <div class="flex gap-2">
-                    <FeatherIcon icon="log-in" width="14" height="14"/>
-                    <p class="text-xs">Masuk Akun</p>
+                    <FeatherIcon icon="log-in" width="14" height="14" class="text-gray-600"/>
+                    <p class="text-xs text-gray-600">Masuk Akun</p>
                 </div>
             </div>
         </div>
