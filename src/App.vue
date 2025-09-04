@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar.vue";
   <Navbar/>
   <HeroSlider/>
   <Kategori/>
+  <ProdukKhusus/>
 </template>
 
 <style scoped>
@@ -17,6 +18,7 @@ import Navbar from "./components/Navbar.vue";
 
 <script>
 import feather from "feather-icons";
+import ProdukKhusus from "./components/ProdukKhusus.vue";
 
 export default {
   setup() {
