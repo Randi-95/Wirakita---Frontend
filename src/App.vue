@@ -1,5 +1,6 @@
 <script setup>
   import HeroSlider from "./components/HeroSlider.vue";
+import Kategori from "./components/Kategori.vue";
 import Navbar from "./components/Navbar.vue";
 
 </script>
@@ -7,6 +8,7 @@ import Navbar from "./components/Navbar.vue";
 <template>
   <Navbar/>
   <HeroSlider/>
+  <Kategori/>
 </template>
 
 <style scoped>
