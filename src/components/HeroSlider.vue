@@ -2,7 +2,7 @@
   <div class="px-4 sm:px-6 md:px-10">
     <div class="w-full mt-6 relative"> <swiper
         :modules="[Autoplay, Pagination, Navigation]" :loop="true"
-        :autoplay="{ delay: 3000, disableOnInteraction: false }"
+        :autoplay="{ delay: 2000, disableOnInteraction: false }"
         :pagination="{ clickable: true }"
         :navigation="true" :centered-slides="true"
         :slides-per-view="'auto'"
@@ -39,6 +39,11 @@ const banners = [
     { src: "/banner2.webp"},
     { src: "/banner3.webp"},
     { src: "/banner4.webp"},
+    { src: "/banner1.webp"},
+    { src: "/banner2.webp"},
+    { src: "/banner3.webp"},
+    { src: "/banner4.webp"},
+    
 ];
 </script>
 
@@ -67,14 +72,6 @@ const banners = [
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.swiper-button-prev {
-  left: -10px;
-}
-
-.swiper-button-next {
-  right: -10px;
 }
 
 @media (max-width: 640px) {
