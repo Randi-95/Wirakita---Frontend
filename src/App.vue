@@ -1,10 +1,12 @@
 <script setup>
-import Rafi from './components/Navbar.vue';
+  import HeroSlider from "./components/HeroSlider.vue";
+import Navbar from "./components/Navbar.vue";
 
 </script>
 
 <template>
-  <Rafi/>
+  <Navbar/>
+  <HeroSlider/>
 </template>
 
 <style scoped>
