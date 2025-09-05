@@ -15,23 +15,23 @@
 
         <div class="scroll-produk mt-2 lg:mt-10 flex gap-4 overflow-auto">
             <div class="flex-shrink-0">
-                <img src="/public/banner1.webp" alt="" class="w-96 rounded-lg">
+                <img src="/public/banner1.webp" alt="" class="w-50 lg:w-96  rounded-lg">
             </div>
 
             <div class="flex-shrink-0">
-                <img src="/public/banner2.webp" alt="" class="w-96 rounded-lg">
+                <img src="/public/banner2.webp" alt="" class="w-50 lg:w-96  rounded-lg">
             </div>
 
             <div class="flex-shrink-0">
-                <img src="/public/banner3.webp" alt="" class="w-96 rounded-lg">
+                <img src="/public/banner3.webp" alt="" class="w-50 lg:w-96  rounded-lg">
             </div>
 
             <div class="flex-shrink-0">
-                <img src="/public/banner4.webp" alt="" class="w-96 rounded-lg">
+                <img src="/public/banner4.webp" alt="" class="w-50 lg:w-96  rounded-lg">
             </div>
 
             <div class="flex-shrink-0">
-                <img src="/public/banner1.webp" alt="" class="w-96 rounded-lg">
+                <img src="/public/banner1.webp" alt="" class="w-50 lg:w-96  rounded-lg">
             </div>
         </div>
     </div>
