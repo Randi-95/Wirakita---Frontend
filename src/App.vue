@@ -12,6 +12,9 @@ import PendatangBaru from "./components/PendatangBaru.vue";
   <Kategori/>
   <ProdukKhusus/>
   <PendatangBaru/>
+  <DariMata/>
+  <ProdukFavorit/>
+  <TokoFavorit/>
 </template>
 
 <style scoped>
@@ -21,6 +24,9 @@ import PendatangBaru from "./components/PendatangBaru.vue";
 <script>
 import feather from "feather-icons";
 import ProdukKhusus from "./components/ProdukKhusus.vue";
+import DariMata from "./components/DariMata.vue";
+import ProdukFavorit from "./components/ProdukFavorit.vue";
+import TokoFavorit from "./components/TokoFavorit.vue";
 
 export default {
   setup() {
