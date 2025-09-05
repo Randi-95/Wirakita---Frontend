@@ -2,6 +2,7 @@
   import HeroSlider from "./components/HeroSlider.vue";
 import Kategori from "./components/Kategori.vue";
 import Navbar from "./components/Navbar.vue";
+import PendatangBaru from "./components/PendatangBaru.vue";
 
 </script>
 
@@ -10,6 +11,7 @@ import Navbar from "./components/Navbar.vue";
   <HeroSlider/>
   <Kategori/>
   <ProdukKhusus/>
+  <PendatangBaru/>
 </template>
 
 <style scoped>

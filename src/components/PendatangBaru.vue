@@ -6,7 +6,7 @@
 <template>
     <div class="p-4 lg:p-10 mt-2">
         <div class="flex justify-between">
-            <h2 class="text-sm lg:text-2xl font-medium">Dipilih Khusus <span class="font-bold">Untukmu</span></h2>
+            <h2 class="text-sm lg:text-2xl font-medium">Pendatang <span class="font-bold">Baru</span></h2>
             <div class="flex items-center gap-2">
                 <h2 class="text-sm lg:text-xl text-[#06CAF5] font-semibold">Lihat Semua</h2>
                 <FeatherIcon icon="arrow-right" width="24" height="24" class="text-[#06CAF5]"/>

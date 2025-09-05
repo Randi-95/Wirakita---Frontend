@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 sm:px-6 md:px-10">
+  <div class="px-4 sm:px-6 md:px-10 pt-20">
     <div class="w-full mt-6 relative"> <swiper
         :modules="[Autoplay, Pagination, Navigation]" :loop="true"
         :autoplay="{ delay: 2000, disableOnInteraction: false }"
