@@ -4,7 +4,7 @@
             <h2 class="text-sm lg:text-2xl font-medium">Fitur <span class="font-bold">Unggulan</span></h2>
         </div>
 
-        <div class="scroll-produk mt-2 lg:mt-10 flex gap-4 overflow-x-auto lg:overflow-hidden lg:justify-evenly">
+        <div class="scroll-produk mt-2 lg:mt-10 flex gap-4 overflow-x-auto overflow-y-hidden lg:overflow-hidden lg:justify-evenly">
                 <div class="bg-[#ACF0FF] w-50 h-30 md:w-60 md:h-60 rounded-lg relative flex-shrink-0">
                     <div class="flex flex-col items-center justify-center h-full">
                         <h1 class="text-xs md:text-xl text-blue-600 font-bold">Jasa Iklanin</h1>
