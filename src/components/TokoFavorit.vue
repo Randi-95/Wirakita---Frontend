@@ -4,7 +4,7 @@
 
 
 <template>
-    <div class="p-4 lg:p-10 mt-2 mb-20">
+    <div class="p-4 lg:p-10">
         <div class="flex justify-between">
             <h2 class="text-sm lg:text-2xl font-medium">Cek Toko Favorit <span class="font-bold">Wira<span  class="text-[#06CAF5]">Kita</span></span></h2>
             <div class="flex items-center gap-2">

@@ -15,6 +15,7 @@ import PendatangBaru from "./components/PendatangBaru.vue";
   <DariMata/>
   <ProdukFavorit/>
   <TokoFavorit/>
+  <FiturUnggulan/>
 </template>
 
 <style scoped>
@@ -27,6 +28,7 @@ import ProdukKhusus from "./components/ProdukKhusus.vue";
 import DariMata from "./components/DariMata.vue";
 import ProdukFavorit from "./components/ProdukFavorit.vue";
 import TokoFavorit from "./components/TokoFavorit.vue";
+import FiturUnggulan from "./components/FiturUnggulan.vue";
 
 export default {
   setup() {
