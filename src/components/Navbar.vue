@@ -25,9 +25,9 @@ const mobileMenu = ref(false)
                 </div>
 
             </div>
-            <button class="p-2 rounded-full lg:hidden">
+            <router-link to="/login" class="p-2 rounded-full lg:hidden">
                 <FeatherIcon icon="user" width="30" height="30" class="lg:hidden text-gray-500"/>
-            </button>
+            </router-link>
             <div class="lg:flex flex-row gap-2 hidden">
                 <router-link to="/login" class="border border-gray-300 px-6 py-3 rounded-lg flex items-center gap-2">
                     <FeatherIcon icon="user" width="16"/> <span class="font-bold text-md">Masuk</span>
