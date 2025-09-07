@@ -29,9 +29,9 @@ const mobileMenu = ref(false)
                 <FeatherIcon icon="user" width="30" height="30" class="lg:hidden text-gray-500"/>
             </button>
             <div class="lg:flex flex-row gap-2 hidden">
-                <button class="border border-gray-300 px-6 py-3 rounded-lg flex items-center gap-2">
+                <router-link to="/login" class="border border-gray-300 px-6 py-3 rounded-lg flex items-center gap-2">
                     <FeatherIcon icon="user" width="16"/> <span class="font-bold text-md">Masuk</span>
-                </button>
+                </router-link>
                 <button class="px-6 py-3 border border-[#06CAF5] rounded-lg bg-[#06CAF5] flex items-center gap-2">
                     <FeatherIcon icon="shopping-bag" width="16"/> <span class="font-bold text-md">Mulai Jualan</span>
                 </button>
@@ -72,17 +72,17 @@ const mobileMenu = ref(false)
             </div>
 
             <div class="flex items-center gap-4 justify-between w-full mt-2">
-                <div class="flex gap-2">
+                <router-link to="/register" class="flex gap-2">
                     <FeatherIcon icon="user" width="14" height="14" class="text-gray-600"/>
                     <p class="text-xs text-gray-600">Daftar Akun</p>
-                </div>
+                </router-link>
             </div>
-            <div class="flex items-center gap-4 justify-between w-full mt-2">
+            <router-link to="/login" class="flex items-center gap-4 justify-between w-full mt-2">
                 <div class="flex gap-2">
                     <FeatherIcon icon="log-in" width="14" height="14" class="text-gray-600"/>
                     <p class="text-xs text-gray-600">Masuk Akun</p>
                 </div>
-            </div>
+            </router-link>
         </div>
         </transition>
     </div>

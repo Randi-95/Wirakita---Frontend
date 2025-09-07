@@ -1,43 +1,34 @@
 <script setup>
-  import HeroSlider from "./components/HeroSlider.vue";
-import Kategori from "./components/Kategori.vue";
-import Navbar from "./components/Navbar.vue";
-import PendatangBaru from "./components/PendatangBaru.vue";
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+import AuthLayout from './layout/AuthLayout.vue'; // Siapkan juga untuk halaman login nanti
+import MainLayout from './layout/MainLayout.vue';
 
+const layouts = {
+  main: MainLayout,
+  auth: AuthLayout
+};
+
+const route = useRoute();
+
+// Computed property untuk memilih layout secara dinamis
+const layoutComponent = computed(() => {
+  const layoutName = route.meta.layout || 'main';
+  return layouts[layoutName];
+});
 </script>
 
 <template>
-  <Navbar/>
-  <HeroSlider/>
-  <Kategori/>
-  <ProdukKhusus/>
-  <PendatangBaru/>
-  <DariMata/>
-  <ProdukFavorit/>
-  <TokoFavorit/>
-  <FiturUnggulan/>
+  <component :is="layoutComponent" />
 </template>
 
-<style scoped>
-
-</style>
-
-<script>
-import feather from "feather-icons";
-import ProdukKhusus from "./components/ProdukKhusus.vue";
-import DariMata from "./components/DariMata.vue";
-import ProdukFavorit from "./components/ProdukFavorit.vue";
-import TokoFavorit from "./components/TokoFavorit.vue";
-import FiturUnggulan from "./components/FiturUnggulan.vue";
-
-export default {
-  setup() {
-    return {
-      icons: {
-        home: feather.icons.home.toSvg({ width: 48, height: 48, stroke: "blue" }),
-        search: feather.icons.search.toSvg({ width: 48, height: 48, stroke: "red" })
-      }
-    };
+<style>
+/* Hapus <style scoped> dari App.vue. 
+  Jika ada style global (untuk seluruh aplikasi), letakkan di sini tanpa 'scoped'.
+  Contoh:
+  body {
+    margin: 0;
+    font-family: sans-serif;
   }
-};
-</script>
+*/
+</style>
