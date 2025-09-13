@@ -62,13 +62,35 @@ const mobileMenu = ref(false)
 
                 <FeatherIcon icon="arrow-right" width="16" height="16" class="text-gray-600"/>
             </div>
-            <div class="flex items-center gap-4 justify-between w-full mt-2 border-b border-gray-300 pb-10">
+            <div class="flex items-center gap-4 justify-between w-full mt-2">
                 <div class="flex gap-2">
                     <FeatherIcon icon="book-open" width="14" height="14" class="text-gray-600"/>
                     <p class="text-xs text-gray-600">Artikel</p>
                 </div>
 
                 <FeatherIcon icon="arrow-right" width="16" height="16" class="text-gray-600"/>
+            </div>
+
+            <div class="mt-2 border-b border-gray-300 pb-2 flex flex-wrap gap-x-4 gap-y-2">
+                <div class="border-1 border-gray-300 rounded-full px-4 py-1 w-fit">
+                    <p class="text-xs text-gray-600">Untukmu</p>
+                </div>
+
+                 <div class="border-1 border-gray-300 rounded-full px-4 py-1 w-fit">
+                    <p class="text-xs text-gray-600">Baru</p>
+                </div>
+
+                 <div class="border-1 border-gray-300 rounded-full px-4 py-1 w-fit">
+                    <p class="text-xs text-gray-600">Produk Favorit</p>
+                </div>
+
+                 <div class="border-1 border-gray-300 rounded-full px-4 py-1 w-fit">
+                    <p class="text-xs text-gray-600">Toko Favorit</p>
+                </div>
+
+                 <div class="border-1 border-gray-300 rounded-full px-4 py-1 w-fit">
+                    <p class="text-xs text-gray-600">Fitur</p>
+                </div>
             </div>
 
             <div class="flex items-center gap-4 justify-between w-full mt-2">
