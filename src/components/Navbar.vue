@@ -40,7 +40,7 @@ const mobileMenu = ref(false)
 
         <!-- menu navbar mobile -->
         <transition name="slide">
-        <div v-if="mobileMenu" class="absolute top-0 left-0 w-3/4 h-screen bg-white shadow-lg lg:hidden mt-2 p-4 flex flex-col gap-2">
+        <div v-if="mobileMenu" class="absolute top-0 left-0 w-full h-screen bg-white shadow-lg lg:hidden mt-2 p-4 flex flex-col gap-2">
             <div class="flex items-center ">
                 <button class=" p-2" @click="mobileMenu = false">
                     <FeatherIcon icon="x" width="30" height="30" class="text-gray-500"/>
