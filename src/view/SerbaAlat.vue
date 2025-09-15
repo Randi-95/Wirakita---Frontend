@@ -1,6 +1,6 @@
 <template>
 
-    <div class="px-10">
+    <div class="px-4 md:px-10">
         <div class="mt-20">
             <div class="flex gap-2">
                 <p class="text-sm font-medium text-gray-500">Beranda ></p>
@@ -38,7 +38,6 @@
             </div>
             <div class="">
                 <img src="/public/bannerAlatTulis.png" alt="" class="w-full">
-
                     <div class="container-scroll grid grid-cols-2 lg:grid-cols-4 gap-x-4 my-4 gap-y-4 overflow-x-auto">
                     <div class="lg:w-50 w-auto flex flex-col items-center flex-shrink-0">
                         <div class="">                
@@ -50,7 +49,6 @@
                             <p class="text-xs lg:text-sm font-md text-gray-500">⭐5.0 | Terjual 1239</p>
                         </div>
                     </div>
-
                     <div class="lg:w-50 w-auto flex flex-col items-center flex-shrink-0">
                         <div class="">                
                             <img src="/public/image 7.png" alt="" class="lg:w-50 w-auto rounded-lg"></img>
