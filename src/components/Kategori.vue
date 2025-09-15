@@ -13,7 +13,7 @@
 
       <router-link to="/serba-alat" class="flex flex-col justify-center items-center flex-shrink-0">
           <img src="/public/3.png" alt="" class="w-20 md:w-25 object-cover">
-        <h2 class="text-gray-500 font-semibold text-sm mt-2">Serba Alat</h2>
+        <h2 class="text-gray-500 font-semibold text-sm mt-2">Alat Tulis</h2>
       </router-link>
 
       <div class="flex flex-col justify-center items-center flex-shrink-0">
