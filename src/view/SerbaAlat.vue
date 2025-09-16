@@ -1,10 +1,20 @@
+<script setup lang="ts">
+import FeatherIcon from '@/components/FeatherIcon.vue';
+
+</script>
+
 <template>
 
     <div class="px-4 md:px-10">
-        <div class="mt-20">
+        <div class="mt-20 flex justify-between">
             <div class="flex gap-2">
                 <p class="text-sm font-medium text-gray-500">Beranda ></p>
                 <p class="text-sm font-semibold text-[#06CAF5]">Alat Tulis</p>
+            </div>
+
+            <div class="flex items-center gap-2 mr-4 lg:hidden cursor-pointer">
+                <FeatherIcon icon="filter" width="16" height="16" class="text-gray-500"/>
+                <p class="text-sm text-gray-500">Filter</p>    
             </div>
         </div>
         <div class="lg:grid lg:grid-cols-[1fr_4fr] mt-4">
