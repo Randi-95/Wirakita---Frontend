@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import FeatherIcon from './FeatherIcon.vue';
+    import { ref } from 'vue';
+    import FeatherIcon from './FeatherIcon.vue';
 
-const mobileMenu = ref(false)
+    const mobileMenu = ref(false)
 </script>
 
 <template>
