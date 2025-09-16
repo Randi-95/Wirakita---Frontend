@@ -25,7 +25,7 @@ const mobileMenu = ref(false)
                 </div>
 
             </div>
-            <router-link to="/login " class="p-2 rounded-full lg:hidden">
+            <router-link to="/login" class="p-2 rounded-full lg:hidden">
                 <FeatherIcon icon="user" width="30" height="30" class="lg:hidden text-gray-500"/>
             </router-link>
             <div class="lg:flex flex-row gap-2 hidden">

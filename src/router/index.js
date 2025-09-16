@@ -8,7 +8,7 @@ const routes = [
   { path: '/', name: 'Home', component: Beranda, meta: { layout: 'main' } },
   { path: '/login', name: 'Login', component: Login, meta: { layout: 'auth' }},
   { path: '/register', name: 'Register', component: Register, meta: { layout: 'auth' }},
-  { path: '/serba-alat', name: 'SerbaAlat', component: SerbaAlat, meta: { layout: 'kategori' }},
+  { path: '/alat-tulis', name: 'SerbaAlat', component: SerbaAlat, meta: { layout: 'kategori' }},
 ]
 
 const router = createRouter({
