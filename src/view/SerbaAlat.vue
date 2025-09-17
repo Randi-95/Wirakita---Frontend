@@ -206,8 +206,12 @@
             </div>
         </div>
 
+        <div class="w-full h-screen bg-black opacity-50 absolute right-0 left-0 top-0 z-42" v-if="clickFilter" @click="clickFilter = false">
+            
+        </div>
+
         <transition name="slide">
-        <div class="lg:hidden fixed bottom-0 right-0 left-0 bg-white rounded-xl h-100" v-if="clickFilter">
+        <div class="lg:hidden fixed z-50 bottom-0 right-0 left-0 bg-white rounded-xl h-100" v-if="clickFilter">
             <div class="flex gap-2 p-2 items-center px-4">
                 <FeatherIcon icon="filter" width="16" height="16" class="text-gray-500"/>
                 <h2 class="font-bold text-gray-600">Filter</h2>

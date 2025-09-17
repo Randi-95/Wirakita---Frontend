@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div class="fixed bg-white z-50 top-0 left-0 right-0">
+    <div class="fixed bg-white z-40 top-0 left-0 right-0">
         <div class="flex justify-between gap-2 px-2 lg:px-10 py-4 h-20 items-center">
             <div class="judul-search flex w-full lg:w-[65%] gap-2 items-center">
                 <router-link to="/" class="font-bold text-2xl hidden lg:block mr-4">Wira<span class="text-[#06CAF5]">Kita</span></router-link>
