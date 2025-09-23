@@ -42,8 +42,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="" v-if="dropdownHarga">
-                            randi
+                    <div class="input-harga flex flex-col gap-2" v-if="dropdownHarga">
+                            <input type="number" class="border-[1.2px] border-gray-300 rounded-sm h-10 px-3 placeholder-gray-400 placeholder:italic placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-200" placeholder="Rp. Harga terendah">
+                            <input type="number" class="border-[1.2px] border-gray-300 rounded-sm h-10 px-3 placeholder-gray-400 placeholder:italic placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-200" placeholder="Rp. Harga Tertinggi">
                     </div>
                     <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]" @click="dropdownKelas = !dropdownKelas">
                         <div class="flex justify-between">
@@ -60,8 +61,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="" v-if="dropdownKelas">
-                            randi
+                    <div class="flex flex-col gap-2" v-if="dropdownKelas">
+                        <form>
+                        <label class="text-gray-800 text-md ml-2">
+                            <input type="checkbox" name="pilihan" value="option1">
+                            10 RPL 1
+                        </label>
+                        <br>
+                        <label class="text-gray-800 text-md ml-2">
+                            <input type="checkbox" name="pilihan" value="option2">
+                            10 RPL 2
+                        </label>
+                        <br>
+                        <label class="text-gray-800 text-md ml-2">
+                            <input type="checkbox" name="pilihan" value="option2">
+                            1O RPL 1
+                        </label>
+                        <br>
+                        <label class="text-gray-800 text-md ml-2">
+                            <input type="checkbox" name="pilihan" value="option2">
+                            10 RPL 2
+                        </label>
+                        </form>
                     </div>
                     <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]" @click="dropdownTransaksi = !dropdownTransaksi">
                         <div class="flex justify-between">
@@ -79,7 +100,17 @@
                         </div>
                     </div>
                     <div class="" v-if="dropdownTransaksi">
-                            randi
+                            <form>
+                            <label class="text-gray-800 text-sm ml-2">
+                                <input type="radio" name="pilihan" value="option1">
+                                Cash On Delivery
+                            </label>
+                            <br>
+                            <label class="text-gray-800 text-sm ml-2">
+                                <input type="radio" name="pilihan" value="option2">
+                                QRIS PENJUAL
+                            </label>
+                            </form>
                     </div>
 
                     <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]" @click="dropdownTerakhir = !dropdownTerakhir">
@@ -98,7 +129,17 @@
                         </div>
                     </div>
                     <div class="" v-if="dropdownTerakhir">
-                            randi
+                             <form>
+                            <label class="text-gray-800 text-sm ml-2">
+                                <input type="radio" name="pilihan" value="option1">
+                                Terbaru
+                            </label>
+                            <br>
+                            <label class="text-gray-800 text-sm ml-2">
+                                <input type="radio" name="pilihan" value="option2">
+                                Terlama
+                            </label>
+                            </form>
                     </div>
                 </div>
             </div>
@@ -211,85 +252,93 @@
         </div>
 
         <transition name="slide">
-        <div class="lg:hidden fixed z-50 bottom-0 right-0 left-0 bg-white rounded-xl h-100" v-if="clickFilter">
-            <div class="flex gap-2 p-2 items-center px-4">
-                <FeatherIcon icon="filter" width="16" height="16" class="text-gray-500"/>
-                <h2 class="font-bold text-gray-600">Filter</h2>
+        <div class="lg:hidden fixed z-50 bottom-0 right-0 left-0 bg-white rounded-xl h-120 overflow-y-auto" v-if="clickFilter">
+            <div class="flex items-center justify-between px-4">
+                <div class="cursor-pointer" @click="clickFilter = false">
+                    <FeatherIcon icon="x" width="25" height="25" class="text-gray-500"/>
+                </div>
+                <div class="flex gap-2 p-2 items-center px-4">
+                    <FeatherIcon icon="filter" width="20" height="20" class="text-gray-500"/>
+                    <h2 class="font-semibold text-gray-600 text-xl">Filter</h2>
+                </div>
             </div>
             <div class="p-4 flex flex-col gap-6">
-                    <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]" @click="dropdownHarga = !dropdownHarga">
+                    <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]">
                         <div class="flex justify-between">
                             <h2 class="text-gray-800 text-sm ml-2">Filter Harga</h2>
-                            <div class="">
-                                <svg v-if="dropdownHarga" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <polyline points="18 15 12 9 6 15"></polyline>
-                                </svg>
-                                <svg v-else xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" 
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-                                    aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
                         </div>
                     </div>
-                    <div class="" v-if="dropdownHarga">
-                            randi
+                    <div class="flex gap-2">
+                            <input type="number" class="border-[1.2px] border-gray-300 rounded-sm h-10 px-3 placeholder-gray-400 placeholder:italic placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-200" placeholder="Rp. Harga terendah">
+                            <input type="number" class="border-[1.2px] border-gray-300 rounded-sm h-10 px-3 placeholder-gray-400 placeholder:italic placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-200" placeholder="Rp. Harga Tertinggi">
                     </div>
-                    <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]" @click="dropdownKelas = !dropdownKelas">
+                    <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]">
                         <div class="flex justify-between">
                             <h2 class="text-gray-800 text-sm ml-2">Filter Kelas</h2>
-                            <div class="">
-                                <svg v-if="dropdownKelas" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <polyline points="18 15 12 9 6 15"></polyline>
-                                </svg>
-                                <svg v-else xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" 
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-                                    aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
                         </div>
                     </div>
-                    <div class="" v-if="dropdownKelas">
-                            randi
+                    <div class="">
+                             <form>
+                        <label class="text-gray-800 text-md ml-2">
+                            <input type="checkbox" name="pilihan" value="option1">
+                            10 RPL 1
+                        </label>
+                        <br>
+                        <label class="text-gray-800 text-md ml-2">
+                            <input type="checkbox" name="pilihan" value="option2">
+                            10 RPL 2
+                        </label>
+                        <br>
+                        <label class="text-gray-800 text-md ml-2">
+                            <input type="checkbox" name="pilihan" value="option2">
+                            1O RPL 1
+                        </label>
+                        <br>
+                        <label class="text-gray-800 text-md ml-2">
+                            <input type="checkbox" name="pilihan" value="option2">
+                            10 RPL 2
+                        </label>
+                        </form>
                     </div>
-                    <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]" @click="dropdownTransaksi = !dropdownTransaksi">
+                    <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]" >
                         <div class="flex justify-between">
                             <h2 class="text-gray-800 text-sm ml-2">Tipe Transaksi</h2>
-                            <div class="">
-                                <svg v-if="dropdownTransaksi" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <polyline points="18 15 12 9 6 15"></polyline>
-                                </svg>
-                                <svg v-else xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" 
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-                                    aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
                         </div>
                     </div>
-                    <div class="" v-if="dropdownTransaksi">
-                            randi
+                    <div class="">
+                        <form>
+                            <label class="text-gray-800 text-sm ml-2">
+                                <input type="radio" name="pilihan" value="option1">
+                                Cash On Delivery
+                            </label>
+                            <br>
+                            <label class="text-gray-800 text-sm ml-2">
+                                <input type="radio" name="pilihan" value="option2">
+                                QRIS PENJUAL
+                            </label>
+                            </form> 
                     </div>
 
-                    <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]" @click="dropdownTerakhir = !dropdownTerakhir">
+                    <div class="flex flex-col justify-center cursor-pointer gap-2  w-full  h-8 border-l-2 border-[#06CAF5]">
                         <div class="flex justify-between">
                             <h2 class="text-gray-800 text-sm ml-2">Terakhir Ditambahkan</h2>
-                            <div class="">
-                                <svg v-if="dropdownTerakhir" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <polyline points="18 15 12 9 6 15"></polyline>
-                                </svg>
-                                <svg v-else xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" 
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-                                    aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
                         </div>
                     </div>
-                    <div class="" v-if="dropdownTerakhir">
-                            randi
+                    <div class="">
+                         <form>
+                            <label class="text-gray-800 text-sm ml-2">
+                                <input type="radio" name="pilihan" value="option1">
+                                Terbaru
+                            </label>
+                            <br>
+                            <label class="text-gray-800 text-sm ml-2">
+                                <input type="radio" name="pilihan" value="option2">
+                                Terlama
+                            </label>
+                            </form>
                     </div>
+
+                    <button class="bg-[#06CAF5] text-white p-2 rounded-lg font-bold">Filter</button>
                 </div>
         </div>
         </transition>
@@ -298,7 +347,6 @@
 
 
 <style>
-
     .slide-enter-from {
         transform: translatey(100%);
         opacity: 0;
